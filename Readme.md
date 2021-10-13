@@ -3,7 +3,7 @@
 In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zeichnen Sie einen überraschten Smiley, wie in der folgenden Abbildung dargestellt.
 
 | Dieses Bild soll gezeichnet werden. |
-|: ----------------------------------- :|
+|:------:|
 | ![Hello GraphicsApp](./docs/u03-hello-graphicsApp.png) |
 
 
