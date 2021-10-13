@@ -2,7 +2,9 @@
 
 In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zeichnen Sie einen überraschten Smiley, wie in der folgenden Abbildung dargestellt.
 
-![Hello GraphicsApp](docs/u03-hello-graphicsApp.png)
+| Dieses Bild soll gezeichnet werden. |
+| ----------------------------------- |
+| ![Hello GraphicsApp](docs/u03-hello-graphicsApp.png) |
 
 
 - Ihr Programm startet in der Methode `public void initalize()`. Das Zeichnen des Gesichts soll in der Methode `draw` druchgeführt werden.
