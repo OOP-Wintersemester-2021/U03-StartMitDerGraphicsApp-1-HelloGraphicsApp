@@ -1,4 +1,4 @@
-# U02-1 | Hello Graphics App
+# U07 | Hello Graphics App
 
 In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zeichnen Sie einen überraschten Smiley, wie in der folgenden Abbildung dargestellt.
 
