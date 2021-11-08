@@ -46,6 +46,12 @@ public class HelloGraphicsApp extends GraphicsApp {
         drawRightEye();
     }
 
+    /*
+        CANVAS_WIDTH bzw. CANVAS_HEIGHT / 2 liefert die Position der Mitte unserer Zeichenfläche. Hier platzieren wir den
+        Mittelpunkt unseres Kreises, so dass dieser mittig im Bild angezeigt wird. Das .f hinter 2 sorgt dafür, dass
+        die 2 als eine Kommazahl behandelt wird und somit die Nachkommastellen nicht abgeschnitten werden.
+        Durch Aufruf von face.draw() wird der Kreis im Bild angezeigt.
+    */
     private void drawFace() {
         float x = CANVAS_WIDTH / 2.f;
         float y = CANVAS_HEIGHT / 2.f;
@@ -55,6 +61,11 @@ public class HelloGraphicsApp extends GraphicsApp {
         face.draw();
     }
 
+    /*
+        Der Mund soll aus der x-Achse mittig angezeigt werden, aber auf der y-Achse nach unten versetzt werden.
+        Da in der GraphicsApp höhere y-Werte weiter unten sind, wird der CANVAS_HEIGHT durch eine kleinere Zahl
+        geteilt, um den Kreis nach unten zu verschieben.
+    */
     private void drawMouth() {
         float x = CANVAS_WIDTH / 2.f;
         float y = CANVAS_HEIGHT / 1.5f;
@@ -64,6 +75,16 @@ public class HelloGraphicsApp extends GraphicsApp {
         mouth.draw();
     }
 
+    /*
+        Das linke Auge wird nach links verschoben indem vom Mittelpunkt der Zeichenfläche, den man durch
+        CANVAS_WIDTH/2 erhält ein Wert abgezogen wird. Denn wie in einem Koordinatensystem sind kleinere Werte
+        weiter links und größere weiter rechts.
+        Das Auge wird weiter nach oben verschoben, indem die Höhe des Canvas durch einen Wert >2 geteilt wird,
+        dadurch wird der Wert kleiner und kleinere y-Werte liegen in der GraphicsApp weiter oben.
+        Das Auge soll außerdem nicht so graß sein wie der ganze Canvas, daher werden Breite und Höhe durch
+        Teilen der Canvas Breite und Höhe durch Zahlen >1 berechnet. Analog gilt das für die Pupillen, diese
+        sollen aber kleiner sein als das Auge und werden daher durch nochmal größere Zahlen geteilt.
+    */
     private void drawLeftEye() {
         float x = CANVAS_WIDTH / 2.f - CANVAS_WIDTH / 10.f;
         float y = CANVAS_HEIGHT / 2.5f;
@@ -77,6 +98,7 @@ public class HelloGraphicsApp extends GraphicsApp {
         leftIris.draw();
     }
 
+    // Diese Methode funktioniert analog zu drawLeftEye()
     private void drawRightEye() {
         float x = CANVAS_WIDTH / 2.f + CANVAS_WIDTH / 10.f;
         float y = CANVAS_HEIGHT / 2.5f;
